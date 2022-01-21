@@ -57,7 +57,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 18px;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .side-navigation .navigation .menu-item span {
@@ -73,4 +73,21 @@
     margin-right: 19px;
     height: 25px;
     width: auto;
+}
+.footer {
+    position: absolute;
+    width: 184px;
+height: 24px;
+left: 526px;
+top: 200px;
+
+color: #02577A;
+}
+.footer .line {
+width: 346.01px;
+height: 0px;
+left: 547px;
+top: 871px;
+border: 1px solid #02577A;
+
 }

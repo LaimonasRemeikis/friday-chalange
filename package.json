@@ -1,0 +1,23 @@
+{
+  "name": "friday-chalange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {"dev": "dead-server --port=3000 --host=localhost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaimonasRemeikis/friday-chalange.git"
+  },
+  "keywords": [],
+  "author": "Laimonas <laimonasremeikis@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LaimonasRemeikis/friday-chalange/issues"
+  },
+  "homepage": "https://github.com/LaimonasRemeikis/friday-chalange#readme",
+  "devDependencies": {
+    "dead-server": "^1.0.6"
+  }
+}

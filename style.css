@@ -1,0 +1,76 @@
+.side-navigation {
+    height: 100vh;
+    background-color: var(--side-navigation-background-color);
+    box-shadow: 0 4px 4px var(--box-shadow-color);
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 0;
+    transition: all 0.2s ease;
+}
+
+.side-navigation:hover {
+    max-width: 206px;
+}
+
+.side-navigation:hover .navigation .menu-item span {
+    display: block;
+}
+
+.side-navigation .logo {
+    width: 84px;
+    height: 34px;
+    margin-bottom: 24px;
+}
+
+.side-navigation .logo img {
+    display: block;
+    margin: auto;
+}
+
+.side-navigation .divider {
+    width: 62px;
+    height: 2px;
+    margin-bottom: 32px;
+    background-color: var(--menu-item-color);
+}
+
+.side-navigation .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 11px;
+    width: 100%;
+}
+
+.side-navigation .navigation .menu-item {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--menu-item-color);
+    width: 100%;
+    padding: 16px 44px 16px 32px;
+    border-radius: 25px 0 0 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    transition: all 0.2s ease;
+}
+
+.side-navigation .navigation .menu-item span {
+    display: none;
+}
+
+.side-navigation .navigation .menu-item.active, .side-navigation .navigation .menu-item:hover {
+    background-color: var(--white-color);
+    color: var(--active-menu-item-color);
+}
+
+.side-navigation .navigation .menu-item img {
+    margin-right: 19px;
+    height: 25px;
+    width: auto;
+}

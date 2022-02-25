@@ -163,8 +163,10 @@ width: 896px;
 .container-second > img
 {
     width: 100%;
-left: 97.06px;
-top: 226.5px
+    /* left: 97.06px; */
+    /* top: 238.5px; */
+    object-fit: cover;
+    height: 269px;
 }
 .container-third{
     display: flex;

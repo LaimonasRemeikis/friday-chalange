@@ -79,9 +79,6 @@
     height: 25px;
     width: auto;
 }
-.footer {
-    
-}
 .footer .line {
 width: 346px;
 background-color:#02577A ;
@@ -89,7 +86,6 @@ height: 1px;
 margin-left: auto;
 margin-right: auto;
 }
-
 .side-navigation .navigation .menu-item:last-child  {
     left: -8px;
     position: relative;
@@ -146,9 +142,9 @@ color: #02577A;
 }
 .calendar{
     font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 50px;
 }
 .after-img{
 font-style: normal;
@@ -173,8 +169,182 @@ width: 896px;
     justify-content: center;
     text-align: center;
 }
+/* calendar page */
 
+main .container{
+    display: grid;
+}
+main .container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 30px;
+    grid-template-areas: 
+    'progress-bar1 calendar'
+    'progress-bar2 calendar'
+    'progress-bar2 calendar';
+}
+.progress-bars{
+    margin-left: 30px;
+}
+main .container .progress-bars .progress-bar1{
+    grid-area:progress-bar1 ;
+    width: 100%;
+    height: 159px;
+    left: 157px;
+    top: 60px;
+    background: #FFFFFF;
+    border-radius: 25px;
+}
+main .container .progress-bars .progress-bar2{
+    grid-area:progress-bar2 ;
+    width: 100%;
+    height: 159px;
+    left: 157px;
+    top: 60px;
+    background: #FFFFFF;
+    border-radius: 25px;
+}
+main .container .progress-bars .progress-bar3{
+    grid-area:progress-bar3 ;
+    width: 100%;
+    height: 159px;
+    left: 157px;
+    top: 60px;
+    background: #FFFFFF;
+    border-radius: 25px;
+}
+main .container .calendar{
+    grid-area:calendar ;
+}
+/* Progressbars */
+.title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+}
+.description{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #C4C4C4;
+}
+.progressBar{
+    width: 188px;
+    height: 20px;
+    left: 199px;
+    top: 175px;
+    background: #FC0000;
+    border-radius: 25px;
+}
+ul {list-style-type: none;}
 
+/* calendorius */
+.calendar{
+    width: 670px;
+    height: 500px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.month {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0 22px 0;
+}
+.month i{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer;
+}
+.month h1{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.weekdays{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #C4C4C4;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    gap: 45px;
+}
+.weekdays div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 7);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #C4C4C4;
+}
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.days div{
+    font-size: 16px;
+    margin: 0;
+    width: calc(100% / 7);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div span .active{
+ 
+}
+.priev-day{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #C4C4C4;
+}
+.next-day{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #C4C4C4;
+}
 
 
 @media (max-width: 1060px)

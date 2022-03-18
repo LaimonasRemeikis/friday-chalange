@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+
 .side-navigation {
     height: 100vh;
     background-color: var(--side-navigation-background-color);
@@ -79,9 +82,6 @@
     height: 25px;
     width: auto;
 }
-.footer {
-    
-}
 .footer .line {
 width: 346px;
 background-color:#02577A ;
@@ -145,9 +145,9 @@ color: #02577A;
 }
 .calendar{
     font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 50px;
 }
 .after-img{
 font-style: normal;
@@ -162,8 +162,10 @@ width: 896px;
 .container-second > img
 {
     width: 100%;
-left: 97.06px;
-top: 226.5px
+    /* left: 97.06px; */
+    /* top: 238.5px; */
+    object-fit: cover;
+    height: 269px;
 }
 .container-third{
     display: flex;
@@ -178,12 +180,12 @@ main .container{
 main .container{
     
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px 30px;
+    grid-template-columns: 2fr 2.5fr 5px;
+    gap: 5px 10px;
     grid-template-areas: 
     'progress-bar1 calendar'
     'progress-bar2 calendar'
-    'progress-bar2 calendar';
+    'progress-bar3 calendar';
 }
 .progress-bars{
     margin-left: 30px;
@@ -225,6 +227,8 @@ main .container .calendar{
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
+    padding-left: 20px;
+    padding-top: 10px
 }
 .description{
     font-family: Montserrat;
@@ -232,22 +236,43 @@ main .container .calendar{
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    padding-left: 25px;
     color: #C4C4C4;
 }
-.progressBar{
+.progress-bar1 .progressBar{
     width: 188px;
     height: 20px;
     left: 199px;
     top: 175px;
-    background: #FC0000;
+    background: red;
     border-radius: 25px;
+    margin-left: 25px;
 }
+.progress-bar2 .progressBar{
+    width: 188px;
+    height: 20px;
+    left: 199px;
+    top: 175px;
+    background: #FC0;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+.progress-bar3 .progressBar{
+    width: 188px;
+    height: 20px;
+    left: 199px;
+    top: 175px;
+    background: greenyellow;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+
 ul {list-style-type: none;}
 
 /* calendorius */
 .calendar{
     width: 670px;
-    height: 500px;
+    height: auto;
     background: #FFFFFF;
     border-radius: 25px;
     margin-top: 20px;
@@ -262,7 +287,7 @@ ul {list-style-type: none;}
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px 0 22px 0;
+    padding: 20px 0 10px 0;
 }
 .month i{
     font-style: normal;
@@ -272,10 +297,19 @@ ul {list-style-type: none;}
     cursor: pointer;
 }
 .month h1{
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 700;
     letter-spacing: 1px;
 }
+  .today {
+    background-color: #02577A;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
 .weekdays{
     height: 100px;
     display: flex;
@@ -323,28 +357,18 @@ ul {list-style-type: none;}
     justify-content: center;
     align-items: center;
 }
-div span .active{
- 
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
 }
-.priev-day{
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #C4C4C4;
+.fa-angle-left:before {
+    content: "\f104";
+    margin-right: 20px;
 }
-.next-day{
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #C4C4C4;
+.fa-angle-right:before {
+    content: "\f104";
+    margin-left: 20px;
 }
 
 
